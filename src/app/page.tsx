@@ -8,11 +8,11 @@ export type UploadResult = {
 info: {
   public_id: string
 
-},
-event: 'success'
+};
+event: 'success';
 
 
-}
+};
 
 export default function Home() {
   const [imageId,setImageid] = useState("");
@@ -31,7 +31,7 @@ export default function Home() {
           {imageId &&(
 
          <CldImage
-            width="400"
+            width="500"
             height="300"
             src={imageId}
             sizes="100vw"
